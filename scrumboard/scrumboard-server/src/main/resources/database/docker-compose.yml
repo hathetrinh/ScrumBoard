@@ -1,0 +1,22 @@
+version: '2'
+services:
+  db:
+    container_name: "scrumboard_production_database"
+    image: "scrumboard_postgres"
+    environment:
+        POSTGRES_PASSWORD: admin
+        POSTGRES_USER: admin
+        POSTGRES_DB: scrumboarddb
+    build:
+          context: .
+          dockerfile: Dockerfile.postgres
+    volumes:
+      - /var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+networks:
+    default:
+      external:
+        name: database_default
+
+
