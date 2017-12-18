@@ -1,5 +1,5 @@
 # Created by .ignore support plugin (hsz.mobi)
-.idea
+
 scrumboard/scrumboard-server/.gitignore
 scrumboard/scrumboard-server/.mvn/
 scrumboard/scrumboard-server/mvnw
@@ -10,6 +10,7 @@ scrumboard/scrumboard-client/node_modules
 scrumboard/scrumboard-client/etc
 scrumboard/scrumboard-client/node
 .DS_Store
-#scrumboard/scrumboard-server/scrumboard-server.iml
-#scrumboard/scrumboard-client/scrumboard-client.iml
-#scrumboard/scrumboard.iml
+scrumboard/scrumboard-server/scrumboard-server.iml
+scrumboard/scrumboard-client/scrumboard-client.iml
+scrumboard/scrumboard.iml
+/.idea/
