@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+				   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.2.xsd">
+
+	<changeSet id="01" author="trinhha">
+		<createTable tableName="task"
+					 remarks="A table to contain all task">
+			<column name="id" type="int">
+				<constraints nullable="false" unique="true" primaryKey="true"/>
+			</column>
+			<column name="title" type="varchar(255)"/>
+			<column name="description" type="varchar(2550)"/>
+			<column name="create_time" type="time"/>
+			<column name="update_time" type="time"/>
+			<column name="priority" type="int"/>
+			<column name="dateline" type="time"/>
+			<column name="category" type="int"/>
+		</createTable>
+	</changeSet>
+</databaseChangeLog>
