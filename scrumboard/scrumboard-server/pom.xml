@@ -40,6 +40,20 @@
 					</execution>
 				</executions>
 			</plugin>
+
+			<plugin>
+				<groupId>org.liquibase</groupId>
+				<artifactId>liquibase-maven-plugin</artifactId>
+				<configuration>
+					<changeLogFile>
+						${basedir}/src/main/resources/database/liquibase-changelog.xml
+					</changeLogFile>
+					<driver>org.postgresql.Driver</driver>
+					<url>jdbc:postgresql://${database.host}:${database.port}/${database.name}</url>
+					<username>${database.username}</username>
+					<password>${database.password}</password>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>
