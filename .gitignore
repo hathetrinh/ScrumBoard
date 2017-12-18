@@ -1,9 +1,15 @@
-aa# Created by .ignore support plugin (hsz.mobi)
-.idea/ScrumBoard.iml
-.idea/inspectionProfiles/
-.idea/modules.xml
-.idea/workspace.xml
-scrumboard-server/.gitignore
-scrumboard-server/.mvn/
-scrumboard-server/mvnw
-scrumboard-server/mvnw.cmd
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+scrumboard/scrumboard-server/.gitignore
+scrumboard/scrumboard-server/.mvn/
+scrumboard/scrumboard-server/mvnw
+scrumboard/scrumboard-server/mvnw.cmd
+scrumboard/scrumboard-server/scrumboard-server.iml
+scrumboard/scrumboard-server/target
+scrumboard/scrumboard-client/dist
+scrumboard/scrumboard-client/node_modules
+scrumboard/scrumboard-client/etc
+scrumboard/scrumboard-client/node
+scrumboard/scrumboard-client/scumboard-client.iml
+.DS_Store
+scrumboard/scrumboard.iml
