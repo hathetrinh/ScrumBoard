@@ -2,7 +2,6 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -11,7 +10,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="catchme3-app-parent" target="1.8" />
       <module name="scrumboard" target="1.8" />
       <module name="scrumboard-client" target="1.5" />
       <module name="scrumboard-server" target="1.8" />
