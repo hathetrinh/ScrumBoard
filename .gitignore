@@ -10,5 +10,6 @@ scrumboard/scrumboard-client/node_modules
 scrumboard/scrumboard-client/etc
 scrumboard/scrumboard-client/node
 .DS_Store
-scrumboard-server/scumboard-server.iml
-scrumboard-client/scumboard-client.iml
+#scrumboard/scrumboard-server/scrumboard-server.iml
+#scrumboard/scrumboard-client/scrumboard-client.iml
+#scrumboard/scrumboard.iml
