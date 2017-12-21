@@ -29,9 +29,17 @@ public class TaskController {
     }
 
     @GET
-    @Path("add-new-task")
+    @Path("all-task")
     @Consumes(MediaType.APPLICATION_JSON)
-    public Response getNewTask() {
-        return Response.ok().build();
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getAllTask() {
+        return Response.accepted(this.taskService.getAllTasks()).build();
+    }
+
+    @GET
+    @Path("task")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getTaskById(@QueryParam("id") int id) {
+        return Response.accepted(this.taskService.getTaskById(id)).build();
     }
 }

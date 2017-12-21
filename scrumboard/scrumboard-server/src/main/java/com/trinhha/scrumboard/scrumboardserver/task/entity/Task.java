@@ -7,6 +7,11 @@ import javax.validation.constraints.NotNull;
 import java.sql.Time;
 
 @Entity
+@SequenceGenerator(
+        name = "task_sequence",
+        sequenceName = "task_sequence",
+        allocationSize = 1
+)
 public class Task {
 
     @Id
