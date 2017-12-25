@@ -11,4 +11,6 @@ public interface ITaskService {
     Task getTaskById(int taskId);
 
     Collection<Task> getAllTasks();
+
+    void deletedTask(int taskId);
 }
